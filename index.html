@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanak Vaishnav Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kanak Vaishnav</h1>
+            <p>IT Professional | UI/UX Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container about-section">
+            <div class="about-image">
+                <img src="krish.jpg" alt="Kanak Vaishnav">
+            </div>
+            <div class="about-details">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I’m Kanak Vaishnav, a passionate IT professional and a 3rd-year B.Tech student 
+                    specializing in Information Technology at Medi-Caps University, Indore. 
+                    I have a keen interest in solving problems with efficient code and creating intuitive 
+                    designs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <img src="c++.png" alt="C++ Logo">
+                    <h3>C++</h3>
+                    <p>Experienced in solving problems and building efficient algorithms.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="html.png" alt="HTML Logo">
+                    <h3>HTML </h3>
+                    <p>Expertise in building responsive web pages and HTML is the backbone for web content</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="css.png" alt="CSS Logo">
+                    <h3> CSS</h3>
+                    <p> CSS enhances the visual design, creating modern, user-friendly interfaces and crafting user-friendly designs.</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="mysql.png" alt="SQL Logo">
+                    <h3>MY-SQL</h3>
+                    <p>Skilled in managing databases and writing complex queries.</p>
+                </div>
+
+                <div class="skill-card">
+                    <img src="figma.png" alt="Figma Logo">
+                    <h3>Figma (UI/UX)</h3>
+                    <p>Designing user interfaces and creating prototypes for intuitive user experiences.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="python.png" alt="Python Logo">
+                    <h3>Python</h3>
+                    <p>Proficient in developing scripts and solving data-related challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2>Hobbies</h2>
+            <p>I enjoy exploring new technologies, designing user-friendly interfaces.
+            Apart from tech,Outside of coding, I enjoy graphic design, photography, and In my free time, I enjoy playing cricket, which has taught me valuable lessons in teamwork, strategy, and leadership. I'm also an avid gamer, with a special interest in BGMI (Battlegrounds Mobile India). It sharpens my quick decision-making skills, teamwork, and ability to adapt to changing situations</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to connect, feel free to reach out:</p>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:krishvaishnav74@google.com">krishvaishnav09@google.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/kanak-vaishnav-a3185525b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/KrishVaishnavv">GitHub Profile</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; all rights reserved | Designed By Kanak vaishnav.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for your message!');
+    this.reset(); 
+});
+    </script>
+</body>
+</html>
